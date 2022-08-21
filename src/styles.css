@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(49, 48, 48);
+    font-family: "lato-light", sans-serif;
+}
+
+h1 {
+    color: #fff;
+}
+
+.main-component h1 {
+    font-family: "Lato", sans-serif;
+}
