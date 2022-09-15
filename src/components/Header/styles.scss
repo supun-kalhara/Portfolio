@@ -1,0 +1,20 @@
+.navbar-nav li a {
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav li {
+        // border-right: 3px solid #7fbcd2;
+    }
+
+    .navitem-border {
+        width: 2px;
+        height: 27px;
+        border-radius: 2px;
+        background-color: #7fbcd2;
+        align-self: center;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
