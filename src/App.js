@@ -7,7 +7,9 @@ function App() {
         <div className="main-component">
             <Header />
             <ParticlesBackground />
-            <h1>Supun Kalhara</h1>
+            <div className="main-header">
+                <h1>Hi, I'm a developer</h1>
+            </div>
         </div>
     );
 }
