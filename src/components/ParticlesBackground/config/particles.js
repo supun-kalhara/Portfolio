@@ -1,10 +1,10 @@
 const particlesConfig = {
     particles: {
         number: {
-            value: 200,
+            value: 80,
             density: {
                 enable: true,
-                value_area: 1000,
+                value_area: 800,
             },
         },
         color: {
@@ -33,6 +33,12 @@ const particlesConfig = {
                 speed: 1,
                 opacity_min: 0.1,
                 sync: false,
+            },
+        },
+        zIndex: {
+            random: {
+                enable: false,
+                minimumValue: 0,
             },
         },
         size: {

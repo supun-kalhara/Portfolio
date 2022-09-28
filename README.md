@@ -1,5 +1,2 @@
--Fix z index for particles effect
--Fix Header Title
--Fix Particlejs background
 -Fix Header Section
 -Check Animations for Header

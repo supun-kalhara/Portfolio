@@ -8,7 +8,17 @@ function App() {
             <Header />
             <ParticlesBackground />
             <div className="main-header">
-                <h1>Hi, I'm a developer</h1>
+                <div>
+                    <h1>
+                        <span className="main-header-line1">
+                            Hi, <br></br>
+                        </span>
+                        I'm a Web developer
+                    </h1>
+                    <div className="sub-header">
+                        <p>Building Spectacular Sites</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
