@@ -1,0 +1,270 @@
+$medium: 900px
+$border-style: 5px solid #06283D
+$border-space: 0px
+$graph-height: 80%
+
+body 
+    font-family: 'Open Sans', sans-serif
+
+.text
+    color: #aaaaaa
+    font-family: 'Open Sans', sans-serif
+    
+.profile-section 
+    position: absolute
+    width: 100%
+    height: 100%
+    // background-color: #B8E8FC
+    // background-color: #DFF6FF
+    background: rgb(73, 73, 73)
+    // background: -webkit-linear-gradient(to right, #C6FFDD, #FBD786, #f7797d)
+    // background: linear-gradient(to right, #C6FFDD, #FBD786, #f7797d)
+
+    // background: #C6FFDD
+    // background: -webkit-linear-gradient(to right, #525252, #3d72b4)
+    // background: linear-gradient(to right, #525252, #3d72b4)
+
+    border-top: 3px solid white
+
+    // .filler-line-top-right
+    //     position: absolute
+    //     top: 0
+    //     right: 180px
+    //     width: 50px
+    //     height: 600px
+    //     background-color: #343435
+    //     boxShadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+    // .filler-line-bottom-left
+    //     position: absolute
+    //     bottom: 0
+    //     left: 180px
+    //     width: 50px
+    //     height: 600px
+    //     background-color: #343435
+    //     boxShadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+    @media (max-width: 540px) 
+        height: auto
+
+    .profile-section-sub-wrapper
+        position: abosolute
+        margin: 10px
+        height: calc(100% - 20px)
+
+        @media (max-width: 800px) 
+            margin: 0px
+            margin-bottom: 10px
+
+        .ant-divider
+            .ant-divider-inner-text
+                font-size: 2.5em
+                color: #256D85
+                letter-spacing: 2px
+                font-weight: bold
+
+        .profile-header-wrapper
+            margin-bottom: 0
+            padding-bottom: 0
+            display: flex
+            justify-content: flex-start
+            align-items: center
+
+            .profile-header
+                letter-spacing: 2px
+                font-weight: bold
+
+        .ant-divider
+            margin: 0
+
+        .profile-body-wrapper
+            width: 100%
+            height: 90%
+            display: flex
+            justify-items: center
+            justify-content: center
+
+            .profile-body-border-wrapper
+                position: relative
+                width: 60%
+                height: 100%
+                padding: 25px 25px 25px 25px
+                display: flex
+                justify-items: center
+                justify-content: center
+
+                @media (max-width: 1375px) 
+                    width: 80%
+
+                @media (max-width: 800px) 
+                    width: 100%
+
+                .overlay-element
+                    position: absolute
+                    width: 150px
+                    height: 100px
+
+                .top-left 
+                    border-left: $border-style
+                    border-top: $border-style
+                    top: $border-space
+                    left: $border-space
+
+
+                .top-right 
+                    border-right: $border-style
+                    border-top: $border-style
+                    top: $border-space
+                    right: $border-space
+                    width: 300px
+
+                    @media (max-width: 800px) 
+                        top: 10px
+                        right: 10px
+                        width: calc(100vw - 30px)
+
+                .bottom-left 
+                    border-left: $border-style
+                    border-bottom: $border-style
+                    bottom: $border-space
+                    left: $border-space
+                    width: 300px
+
+                    @media (max-width: 500px) 
+                        bottom: 10px
+                        left: 10px
+                        width: calc(100vw - 30px)
+
+                .bottom-right 
+                    border-right: $border-style
+                    border-bottom: $border-style
+                    bottom: $border-space
+                    right: $border-space
+
+                .ant-card
+                    width: 100%
+                    background-color: rgb(49, 48, 48)
+
+                // FIX THIS
+                // @media (min-width: 1366px) 
+                //     width: 80%
+                
+                // @media (min-width: 768px) 
+                //     width: 90%
+
+                .ant-card-body
+                    width: 100%
+                    height: calc(100% - 58px)
+
+                .profile-body-sub-wrapper 
+                    display: flex
+                    flex-direction: row
+
+                    @media (max-width: 660px) 
+                        flex-direction: column
+                        justify-content: center
+                        align-items: center
+
+                    .profile-body-content-left
+                        width: 50%
+
+                        @media (max-width: 660px) 
+                            width: 100%
+
+                    .ant-divider
+                        height: auto
+
+                    .profile-body-content-right
+                        
+                        width: 50%
+                        margin: 15px
+                        margin-right: 50px
+
+                        @media (max-width: 660px) 
+                            margin-left: 50px
+                            width: 90%
+
+                .profile-body-footer-wrapper
+                    // position: absolute
+                    bottom: 0
+                    height: 50%
+
+                    .profile-body-footer
+                        width: 100%
+                        height: 100%
+                        
+                        .tech-graph-wrapper
+                            width: 100%
+                            height: calc(100% - 44px)
+                            display: flex
+                            flex-direction: row
+                            flex-wrap: wrap
+                            justify-content: center
+
+                            @media (max-width: 1375px) 
+                                height: auto
+
+                            .tech-graph-sub-wrapper
+                                position: relative
+                                display: flex
+                                flex-direction: column
+                                justify-content: flex-end
+
+                                @media (max-width: 1375px) 
+                                    
+
+                                .graph-label
+                                    display: flex
+                                    align-items: center
+                                    position: absolute
+                                    color: grey
+                                    top: 100px
+                                    left: -30px
+                                    writing-mode: vertical-lr
+                                    font-weight: bold
+                                    
+                                    @media (max-width: 1375px) 
+                                        display: none
+
+                                    .graph-label-text
+                                        align: center
+                                        margin-top: 7px
+                                        margin-left: 3px
+
+                                .graph-column
+                                    align-self: center
+                                    margin-left: 5px
+                                    margin-bottom: 10px
+                                    width: 80%
+                                    height: $graph-height
+
+                                    @media (max-width: 1375px) 
+                                        display: none
+
+                                .tech-stack-logo
+                                    width: 45px
+                                    height: 45px
+                                    margin-left: 5px
+                                    margin-bottom: 5px
+                                
+                                .tech-header
+                                    font-weight: bolder
+                                    
+                                .html-logo
+                                    margin-left: 0px
+
+                                .css-logo
+                                    margin-left: 0px   
+                        
+                        .tech-graph-sub-wrapper:nth-child(n + 0) .graph-column
+                            background-color: #C6FFDD
+
+                        .tech-graph-sub-wrapper:nth-child(2n + 0) .graph-column
+                                background-color: #FBD786
+                                
+                        .tech-graph-sub-wrapper:nth-child(3n + 0) .graph-column
+                                background-color: #f7797d
+
+                            
+                        
+
