@@ -13,11 +13,11 @@ const ParticlesBackground = () => {
 
     return (
         <div className="particles-wrapper">
-            <Particles
+            {/* <Particles
                 id="particles"
                 init={particlesInit}
                 options={particlesConfig}
-            />
+            /> */}
         </div>
     );
 };
