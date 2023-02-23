@@ -31,8 +31,8 @@ function App() {
     // useChain([animationHeaderRef1, animationHeaderRef2, animationHeaderRef3]);
     return (
         <div className="main-component">
-            <div class="overlay-element top-right"></div>
-            <div class="overlay-element bottom-left"></div>
+            <div className="overlay-element top-right"></div>
+            <div className="overlay-element bottom-left"></div>
             <div className="right-elements-background">
                 <img src={cherryImg} />
             </div>
