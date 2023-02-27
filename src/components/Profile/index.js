@@ -11,7 +11,7 @@ import "./styles.sass";
 const Profile = () => {
     return (
         <div className="profile-section text" id="profile">
-            <div className="content-wrapper">
+            {/* <div className="content-wrapper"> */}
                 <div className="right-elements-background">
                     <div className="header-container">
                         <h1>I Design</h1>
@@ -21,7 +21,7 @@ const Profile = () => {
                     </div>
                 </div>
                 <div className="left-elements-background"></div>
-            </div>
+            {/* </div> */}
             <div className="profile-section-sub-wrapper">
             <div className="overlay-element top-right"></div>
             <div className="overlay-element bottom-left"></div>
