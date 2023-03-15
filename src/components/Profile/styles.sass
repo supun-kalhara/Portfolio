@@ -4,16 +4,17 @@ $border-space: 0px
 $graph-height: 80%
 
 body 
-    font-family: 'Open Sans', sans-serif
 
 .text
     color: #aaaaaa
-    font-family: 'Open Sans', sans-serif
     
+.grey-background
+    background: #5A5A5A
+
 .profile-section 
-    position: absolute
+    // position: absolute
     width: 100%
-    height: 100%
+    height: 100vh
     // background-color: #B8E8FC
     // background-color: #DFF6FF
     background: #5A5A5A
@@ -48,8 +49,56 @@ body
         background-color: #5A5A5A
 
         .header-container
+            margin-left: 30px
+            margin-bottom: 50px
+
+            h1
+                font-size: 96px
+                color: #AAE5E2
+                padding: 0
+                margin: 0
+
+    .left-elements-background
+        background-color: #3BB3AA
+
+        .profile-info-scroll-section::-webkit-scrollbar
+            display: none
+
+        .profile-info-scroll-section
+            display: flex
+            flex-direction: column
+            width: 400px
+            height: 600px
+            overflow: scroll
+            margin-right: 50px
+            -ms-overflow-style: none
+            scrollbar-width: none
+
+            .profile-info-scroll-item
+                font-weight: 500
+                color: #ffffffe1
+                font-size: 16px
+                margin: 0px 0px 15px 0px
+                padding: 15px 15px 40px 0px
+                text-align: right
+                border-right: 1px solid #4d4d4d
+                border-top: 1px solid #0000007e
+
+            .profile-info-scroll-item:nth-child(even)
+                color: black
+
+            .first-element
+                font-size: 24px
+                border: none
+                border-right: 1px solid #0000007e
+                border-bottom: 1px solid #0000007e
+                padding: 20px 15px 15px 0px
+                margin-bottom: 17px
+
 
     .page-title-header
+        position: absolute
+        z-index: 1000
         font-size: 50px
         color: #fff
         margin-left: 127px
@@ -58,10 +107,7 @@ body
     @media (max-width: 540px) 
         height: auto
 
-    .profile-section-sub-wrapper
-        position: abosolute
-        margin: 10px
-        height: calc(100% - 20px)
+    .profile-section
 
         @media (max-width: 800px) 
             margin: 0px

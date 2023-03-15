@@ -1,10 +1,10 @@
 import React from "react";
-import "./styles.scss";
+import "./styles.sass";
 
 const Work = () => {
     return (
         <div className="work-section">
-            <h1>Work</h1>
+            <div className="work-section">Work</div>
         </div>
     );
 };

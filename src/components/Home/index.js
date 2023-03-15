@@ -1,42 +1,16 @@
-//components
-import Header from "./components/Header";
-import ParticlesBackground from "./components/ParticlesBackground";
-import Profile from "./components/Profile";
-import Work from "./components/Work";
-import Home from "./components/Home";
-import { useSpring, animated, useChain, useSpringRef } from "react-spring";
-import cherryImg from "./images/assets/cherry_png.png";
+import React from "react";
 
-function App() {
-    // const animationHeaderRef1 = useSpringRef();
-    // const animatedHeader1 = useSpring({
-    //     from: { opacity: 1, marginTop: 500 },
-    //     to: { opacity: 1, marginTop: 0 },
-    //     ref: animationHeaderRef1,
-    // });
+import cherryImg from "../../images/assets/cherry_png.png";
+import Header from "../../components/Header";
+import ParticlesBackground from "../../components/ParticlesBackground";
 
-    // const animationHeaderRef2 = useSpringRef();
-    // const animatedHeader2 = useSpring({
-    //     from: { opacity: 0 },
-    //     to: { opacity: 1 },
-    //     ref: animationHeaderRef2,
-    // });
+import "./styles.sass";
 
-    // const animationHeaderRef3 = useSpringRef();
-    // const animatedHeader3 = useSpring({
-    //     from: { opacity: 0, marginRight: "200px" },
-    //     to: { opacity: 1, marginRight: "0px" },
-    //     ref: animationHeaderRef3,
-    // });
-
-    // useChain([animationHeaderRef1, animationHeaderRef2, animationHeaderRef3]);
+const Home = () => {
     return (
-        <div className="main-component">
-            <div>
-                <Home />
-            </div>
-            {/* <div className="overlay-element top-right"></div>
+        <div className="home-section-wrapper">
             <div className="overlay-element bottom-left"></div>
+            <div className="overlay-element top-right"></div>
             <div className="right-elements-background turquoise-background">
                 <img src={cherryImg} />
             </div>
@@ -52,7 +26,7 @@ function App() {
             <ParticlesBackground />
             <div className="main-header-wrapper">
                 <div className="main-header">
-                    <h1>
+                    {/* <h1>
                         <span>
                             <animated.div
                                 style={animatedHeader1}
@@ -72,17 +46,11 @@ function App() {
                         <animated.div style={animatedHeader3}>
                             <p>Building Spectacular Sites </p>
                         </animated.div>
-                    </div> 
+                    </div>  */}
                 </div>
-            </div> */}
-            <div>
-                <Profile />
-            </div>
-            <div>
-                <Work />
             </div>
         </div>
     );
-}
+};
 
-export default App;
+export default Home;

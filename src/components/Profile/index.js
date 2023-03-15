@@ -11,23 +11,41 @@ import "./styles.sass";
 const Profile = () => {
     return (
         <div className="profile-section text" id="profile">
-            {/* <div className="content-wrapper"> */}
-                <div className="right-elements-background">
-                    <div className="header-container">
-                        <h1>I Design</h1>
-                        <h1>&</h1>
-                        <h1>Create</h1>
-                        <h1>Websites</h1>
+            <div className="grey-background right-elements-background">
+                <div className="header-container">
+                    <h1>I Believe in</h1>
+                    <h1>Functionality</h1>
+                    <h1>& Good</h1>
+                    <h1>Design</h1>
+                </div>
+            </div>
+            <div className="left-elements-background">
+                <div className="profile-info-scroll-section">
+                    <div className="profile-info-scroll-item first-element">
+                        I'm a web developer with over 3 years of experience
+                    </div>
+                    <div className="profile-info-scroll-item">
+                        Built CRUD products for a multitude of small businesses
+                    </div>
+                    <div className="profile-info-scroll-item">
+                        Translated initial ideas into exemplary applications
+                        that fully align with the overall vision.
+                    </div>
+                    <div className="profile-info-scroll-item">
+                        Created a construction app that won the national finals
+                        at the Climate Launchpad Competition
+                    </div>
+                    <div className="profile-info-scroll-item">
+                        Lead several teams to create different web applications
+                        in multiple industries
+                    </div>
+                    <div className="profile-info-scroll-item">
+                        Created Chat & Survey Features for an Employee
+                        Engagement Platform
                     </div>
                 </div>
-                <div className="left-elements-background"></div>
-            {/* </div> */}
-            <div className="profile-section-sub-wrapper">
-            <div className="overlay-element top-right"></div>
-            <div className="overlay-element bottom-left"></div>
-            <div className="page-title-header">Profile</div>
-            
             </div>
+            <div className="page-title-header">Profile</div>
         </div>
     );
 };
