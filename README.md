@@ -1,6 +1,5 @@
 -Learn React routing and navigation
 
--fix viewport height to be exact
 -look into parallax scrolling
 -have the line separators for the descriptions be a gradient that moves when srolling
 .add animations

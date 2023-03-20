@@ -4,6 +4,7 @@ import ParticlesBackground from "./components/ParticlesBackground";
 import Profile from "./components/Profile";
 import Work from "./components/Work";
 import Home from "./components/Home";
+import Contact from "./components/Contact";
 import { useSpring, animated, useChain, useSpringRef } from "react-spring";
 import cherryImg from "./images/assets/cherry_png.png";
 
@@ -80,6 +81,9 @@ function App() {
             </div>
             <div>
                 <Work />
+            </div>
+            <div>
+                <Contact />
             </div>
         </div>
     );
