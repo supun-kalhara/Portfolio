@@ -6,42 +6,45 @@
     border-top: 3px solid white
 
     .work-section-wrapper
-
+        
         // table
-        //     width: 100%
-        //     height: 100%
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
 
         .row
-            height:50vh
+            height: 773px
             width: 100%
+            margin: 0px 100px
             display: flex
             flex-direction: row
-            justify-content: space-between
+            justify-content: center
             padding: 0
-            margin: 0
 
-        .bottom
-            align-items: flex-end
+            .work-column, .work-column-odd
+                width: 250px
+                height: 773px
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                clip-path: polygon(27% 13%, 100% 2%, 100% 100%, 27% 85%)
+                color: black
 
-        .work-section-top-left
-            width: calc(50% - 30px)
-            height: 100%
-            background-color: #979797
+                .work-column-style-line
+                    position: absolute
+                    height: 70%
+                    width: 250px
+                    border-right: 3px solid #AAE5E2
+                    z-index: 1000
+                 
+                img
+                    height: 773px
+                    width: 100%
 
-        .work-section-top-right
-            width: 50%
-            height: calc(100% - 30px)
-            background-color: #313030
-
-        .work-section-bottom-right
-            width: 50%
-            height: calc(100% - 30px)
-            background-color: #313030
-
-        .work-section-bottom-left
-            width: calc(50% - 30px)
-            height: 100%
-            background-color: #979797
+            .work-column-odd
+                border-right: 3px solid #FADB67
         
     .page-title-header
         position: absolute

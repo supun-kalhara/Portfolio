@@ -29,7 +29,7 @@ const Profile = () => {
                     </div>
                     <div className="profile-info-scroll-item">
                         Translated initial ideas into exemplary applications
-                        that fully align with the overall vision.
+                        that fully align with the overall vision
                     </div>
                     <div className="profile-info-scroll-item">
                         Created a construction app that won the national finals

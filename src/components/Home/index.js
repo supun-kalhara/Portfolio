@@ -19,7 +19,7 @@ const Home = () => {
                     <h1>I Design</h1>
                     <h1>&</h1>
                     <h1>Create</h1>
-                    <h1>Websites</h1>
+                    <h1>Software</h1>
                 </div>
             </div>
             <Header />
