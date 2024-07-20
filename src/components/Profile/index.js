@@ -22,7 +22,7 @@ const Profile = () => {
             <div className="left-elements-background">
                 <div className="profile-info-scroll-section">
                     <div className="profile-info-scroll-item first-element">
-                        I'm a web developer with over 3 years of experience
+                        I'm a software engineer with over 2 years of experience
                     </div>
                     <div className="profile-info-scroll-item">
                         Built CRUD products for a multitude of small businesses

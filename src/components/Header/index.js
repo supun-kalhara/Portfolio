@@ -38,13 +38,13 @@ const Header = () => {
                         </li>
                         <div className="navitem-border"></div>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#work">
                                 Work
                             </a>
                         </li>
                         <div className="navitem-border"></div>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#contact">
                                 Contact
                             </a>
                         </li>
