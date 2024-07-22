@@ -7,7 +7,6 @@ import particlesConfig from "./config/particles";
 
 const ParticlesBackground = () => {
     const particlesInit = async (main) => {
-        console.log(main);
         await loadFull(main);
     };
 

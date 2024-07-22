@@ -4,7 +4,6 @@ import vop3 from "../../images/assets/vop_3.jpg"
 import vop4 from "../../images/assets/vop_4.jpg"
 import vop5 from "../../images/assets/vop_5.jpg"
 import vop6 from "../../images/assets/vop_6.jpg"
-import vopThumb from "../../images/assets/vop_thumbnail.jpg"
 
 import salon1 from "../../images/assets/salon_1.jpg"
 import salon2 from "../../images/assets/salon_2.jpg"
@@ -13,7 +12,6 @@ import salon4 from "../../images/assets/salon_4.jpg"
 import salon5 from "../../images/assets/salon_5.jpg"
 import salon6 from "../../images/assets/salon_6.jpg"
 import salon7 from "../../images/assets/salon_7.jpg"
-import salonThumb from "../../images/assets/salon_thumbnail.jpg"
 
 import superglu1 from "../../images/assets/superglu_1.jpg"
 import superglu2 from "../../images/assets/superglu_2.jpg"
@@ -23,7 +21,6 @@ import superglu5 from "../../images/assets/superglu_5.jpg"
 import superglu6 from "../../images/assets/superglu_6.jpg"
 import superglu7 from "../../images/assets/superglu_7.jpg"
 import superglu8 from "../../images/assets/superglu_8.jpg"
-import supergluThumb from "../../images/assets/superglu_thumbnail.jpg"
 
 
 export const workInfo = [
@@ -40,16 +37,10 @@ export const workInfo = [
         stack: [
             "React", 
             "NodeJs",
-            "Javascript",
             "MongoDB",
-            "Ant Design",
-            "Sass",
-            "Postman",
-            "Figma",
-            "Github"
+            "Sass"
 
         ],
-        thumbnail: salonThumb,
         images: [
             salon1,
             salon2,
@@ -73,7 +64,6 @@ export const workInfo = [
             "python",
             "bootstrap" 
         ],
-        thumbnail: vopThumb,
         images: [
             vop1,
             vop2,
@@ -101,13 +91,11 @@ export const workInfo = [
             "NodeJS",
             "AWS Serverless",
             "DynamoDB",
-            "Javascript",
             "ReactNative",
             "Redux",
-            "Figma",
-            "Github" 
+            "Sass"
+
         ],
-        thumbnail: supergluThumb,
         images: [
            superglu1,
            superglu2,

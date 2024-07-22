@@ -6,7 +6,7 @@
             background: black
 
     .ant-drawer-content
-        background: #AAE5E2
+        background: #3BB3AA
 
     .description-wrapper
         display: flex
@@ -69,6 +69,7 @@
             flex-direction: row
             justify-content: center
             padding: 0
+            overflow: auto
 
             .work-column
                 width: 250px
@@ -79,6 +80,16 @@
                 justify-content: center
                 clip-path: polygon(27% 13%, 100% 2%, 100% 100%, 27% 85%)
                 color: black
+                
+                .work-no
+                    position: absolute
+                    font-size: 50px
+                    color: white
+                    z-index: 1001
+                    margin-left: 50px
+
+                .work-no-odd
+                    color: black
 
                 img
                     object-fit: contain

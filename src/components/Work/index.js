@@ -2,10 +2,13 @@ import {React, useState} from "react";
 
 import { Carousel, Drawer } from "antd";
 import { workInfo } from "./constants"
+import workRec from "../../images/assets/work_rec.jpg"
+import workRecOdd from "../../images/assets/work_rec_odd.jpg"
 
 import "./styles.sass";
 import "antd/lib/carousel/style/css";
 import "antd/lib/drawer/style/css";
+
 
 const Work = () => {
     const [open, setOpen] = useState(false);
@@ -21,7 +24,6 @@ const Work = () => {
 
     const renderImages = () => {
         return workInfo[drawerNo].images.map((image) => {
-            {console.log(image)}
             return(
                 <div>
                     <img src={image} />
@@ -54,10 +56,12 @@ const Work = () => {
 
     const renderWorkItems = () => {
         return workInfo.map((item, i) => {
+            var odd = i % 2
             return (
                 <div className="work-column" onClick={ () => showDrawer(i)}>
-                    <div className={i % 2 ? "work-column-style-line work-line-odd" :"work-column-style-line"}></div>
-                    <img src={item.thumbnail} className="vop-demo"/>
+                    <div className={odd ? "work-no work-no-odd" : "work-no"}>{i+1}</div>
+                    <div className={odd ? "work-column-style-line work-line-odd" :"work-column-style-line"}></div>
+                    <img src={odd ? workRecOdd : workRec} className="vop-demo"/>
                 </div>
             )
         })
