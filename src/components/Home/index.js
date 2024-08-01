@@ -4,7 +4,7 @@ import cherryImg from "../../images/assets/cherry_png.png";
 import Header from "../../components/Header";
 import ParticlesBackground from "../../components/ParticlesBackground";
 import useScreenSize from "../../hooks/useScreenSize";
-import { Modal, Button } from 'antd';
+import { Modal } from 'antd';
 
 import "antd/lib/modal/style/css";
 import "antd/lib/button/style/css";
@@ -47,7 +47,7 @@ const Home = () => {
                 <div className="overlay-element bottom-left"></div>
                 <div className="overlay-element top-right"></div>
                 <div className="right-elements-background turquoise-background">
-                    <img src={cherryImg} />
+                    <img src={cherryImg} alt="sakura-tree-deco"/>
                 </div>
                 <div className="left-elements-background">
                     <div className="header-container">

@@ -23,24 +23,24 @@ const Contact = () => {
                     <div className="icon-wrapper">
                         <div>
                             <span className="linkedin">
-                                <a href="https://www.linkedin.com/in/supun-kalhara/" target="_blank">
+                                <a href="https://www.linkedin.com/in/supun-kalhara/" target="_blank" rel="noreferrer">
                                     <AiFillLinkedin />
                                 </a>
                             </span>
                             <span className="github">
-                                <a href="https://github.com/supun-kalhara" target="_blank">
+                                <a href="https://github.com/supun-kalhara" target="_blank" rel="noreferrer">
                                     <AiFillGithub />
                                 </a>
                             </span>
                         </div>
                         <div>
                             <span className="medium">
-                                <a href="https://medium.com/@gl.supunkalhara" target="_blank">
+                                <a href="https://medium.com/@gl.supunkalhara" target="_blank" rel="noreferrer">
                                     <AiOutlineMedium />
                                 </a>
                             </span>
                             <span className="stack-overflow">
-                                <a href="https://stackoverflow.com/users/16425641/supun-kalhara" target="_blank">
+                                <a href="https://stackoverflow.com/users/16425641/supun-kalhara" target="_blank" rel="noreferrer">
                                     <DiStackoverflow />
                                 </a>
                             </span>

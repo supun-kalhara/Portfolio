@@ -28,7 +28,7 @@ const Work = () => {
         return workInfo[drawerNo].images.map((image) => {
             return(
                 <div>
-                    <img src={image} />
+                    <img src={image} alt="project-image" />
                 </div>
             )
         })
@@ -42,7 +42,7 @@ const Work = () => {
                     <h2>{workInfo[drawerNo].title}</h2>
                     <p className="description">{workInfo[drawerNo].description}</p>
                     {workInfo[drawerNo].link ?
-                        <a href={workInfo[drawerNo].link} target="_blank">
+                        <a href={workInfo[drawerNo].link} target="_blank" rel="noreferrer">
                             <div className="github-link">Github <HiArrowUpRight /></div>
                         </a>
                         : <></>
@@ -70,7 +70,7 @@ const Work = () => {
                 <div className="work-column" onClick={ () => showDrawer(i)}>
                     <div className={odd ? "work-no work-no-odd" : "work-no"}>{i+1}</div>
                     <div className={odd ? "work-column-style-line work-line-odd" :"work-column-style-line"}></div>
-                    <img src={odd ? workRecOdd : workRec} className="vop-demo"/>
+                    <img src={odd ? workRecOdd : workRec} className="vop-demo" alt="work-project-item"/>
                 </div>
             )
         })
