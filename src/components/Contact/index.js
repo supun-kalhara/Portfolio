@@ -4,6 +4,7 @@ import { HiArrowUpRight } from "react-icons/hi2";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineMedium } from "react-icons/ai";
+import { DiStackoverflow } from "react-icons/di";
 
 import "./styles.sass";
 
@@ -20,21 +21,31 @@ const Contact = () => {
                 <div className="contact-wrapper">
                     <div className="contact-button"><a href="mailto:gl.supunkalhara@gmail.com">Reach Out <HiArrowUpRight /></a></div>
                     <div className="icon-wrapper">
-                        <span className="linkedin">
-                            <a href="https://www.linkedin.com/in/supun-kalhara/" target="_blank">
-                                <AiFillLinkedin />
-                            </a>
-                        </span>
-                        <span className="github">
-                            <a href="https://github.com/supun-kalhara" target="_blank">
-                                <AiFillGithub />
-                            </a>
-                        </span>
-                        <span className="medium">
-                            <a href="https://medium.com/@gl.supunkalhara" target="_blank">
-                                <AiOutlineMedium />
-                            </a>
-                        </span>
+                        <div>
+                            <span className="linkedin">
+                                <a href="https://www.linkedin.com/in/supun-kalhara/" target="_blank">
+                                    <AiFillLinkedin />
+                                </a>
+                            </span>
+                            <span className="github">
+                                <a href="https://github.com/supun-kalhara" target="_blank">
+                                    <AiFillGithub />
+                                </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span className="medium">
+                                <a href="https://medium.com/@gl.supunkalhara" target="_blank">
+                                    <AiOutlineMedium />
+                                </a>
+                            </span>
+                            <span className="stack-overflow">
+                                <a href="https://stackoverflow.com/users/16425641/supun-kalhara" target="_blank">
+                                    <DiStackoverflow />
+                                </a>
+                            </span>
+                        </div>
+
                     </div>
                 </div>
             </div>

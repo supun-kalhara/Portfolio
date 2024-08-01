@@ -4,6 +4,8 @@ import { Carousel, Drawer } from "antd";
 import { workInfo } from "./constants"
 import workRec from "../../images/assets/work_rec.jpg"
 import workRecOdd from "../../images/assets/work_rec_odd.jpg"
+import { HiArrowUpRight } from "react-icons/hi2";
+
 
 import "./styles.sass";
 import "antd/lib/carousel/style/css";
@@ -38,7 +40,14 @@ const Work = () => {
             <div className="description-wrapper">
                 <div className="info">
                     <h2>{workInfo[drawerNo].title}</h2>
-                    <p>{workInfo[drawerNo].description}</p>{
+                    <p className="description">{workInfo[drawerNo].description}</p>
+                    {workInfo[drawerNo].link ?
+                        <a href={workInfo[drawerNo].link} target="_blank">
+                            <div className="github-link">Github <HiArrowUpRight /></div>
+                        </a>
+                        : <></>
+                    }
+                    {
                         workInfo[drawerNo].info.map((text) => {
                             return <p>- {text}</p>
                         })

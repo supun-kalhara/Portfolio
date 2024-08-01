@@ -22,11 +22,18 @@ import superglu6 from "../../images/assets/superglu_6.jpg"
 import superglu7 from "../../images/assets/superglu_7.jpg"
 import superglu8 from "../../images/assets/superglu_8.jpg"
 
+import wesell1 from "../../images/assets/wesell_1.jpg"
+import wesell2 from "../../images/assets/wesell_2.jpg"
+import wesell3 from "../../images/assets/wesell_3.jpg"
+import wesell4 from "../../images/assets/wesell_4.jpg"
+import wesell5 from "../../images/assets/wesell_5.jpg"
+import wesell6 from "../../images/assets/wesell_6.jpg"
+import wesell7 from "../../images/assets/wesell_7.jpg"
 
 export const workInfo = [
     {
         title: "Salon Booking App",
-        description: "Built a mobile app for booking appointments for a salon.",
+        description: "Built a mobile oriented web app for booking appointments for a salon.",
         info: [
             "Created a signup and login system with separate user entities such as employee, admin and customers",
             "Used mongodb for record keeping while using nodejs for the backend apis",
@@ -38,6 +45,7 @@ export const workInfo = [
             "React", 
             "NodeJs",
             "MongoDB",
+            "Express",
             "Sass"
 
         ],
@@ -49,29 +57,8 @@ export const workInfo = [
             salon5,
             salon6,
             salon7
-        ]
-    },
-    {
-        title: "Village of Professionals",
-        description: "Created a Demo app for the climate launchpad competition that connects various different professionals in the construction industry and went on to win the best national pitch.",
-        info: [
-            "Created a signup and login system",
-            "Built a demo market for construction bids",
-            "Added a discussion forum"
         ],
-        stack: [
-            "django", 
-            "python",
-            "bootstrap" 
-        ],
-        images: [
-            vop1,
-            vop2,
-            vop3,
-            vop4,
-            vop5,
-            vop6,
-        ]
+        link: "https://github.com/Danuja-Kowaski/salon_shahinas_app"
     },
     {
         title: "Superglu",
@@ -105,6 +92,54 @@ export const workInfo = [
            superglu6,
            superglu7,
            superglu8,
+        ],
+    },
+    {
+        title: "weSell API",
+        description: "Built a backend Restful API service for using MERN stack for an ongoing, conceptual marketplace application",
+        info: [
+            "Created user authentication",
+            "Used the Json Web Token library for authorization",
+            "Used industry standard and scalable development methodology",
+            "Used postman to test API services",
+            "Utilized MongoDB with mongoose for database conectivity"
+        ],
+        stack: [
+            "NodeJS", 
+            "Express",
+            "MongoDB" 
+        ],
+        images: [
+            wesell1,
+            wesell2,
+            wesell3,
+            wesell4,
+            wesell5,
+            wesell6,
+            wesell7,
+        ],
+        link: "https://github.com/supun-kalhara/wesell-backend"
+    },
+    {
+        title: "Village of Professionals",
+        description: "Created a Demo app for the climate launchpad competition that connects various different professionals in the construction industry and went on to win the best national pitch.",
+        info: [
+            "Created a signup and login system",
+            "Built a demo market for construction bids",
+            "Added a discussion forum"
+        ],
+        stack: [
+            "django", 
+            "python",
+            "bootstrap" 
+        ],
+        images: [
+            vop1,
+            vop2,
+            vop3,
+            vop4,
+            vop5,
+            vop6,
         ]
-    }
+    },
 ]

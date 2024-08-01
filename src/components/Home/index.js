@@ -35,7 +35,7 @@ const Home = () => {
     return (
         <>
             <Modal 
-                title="This site is not supported for mobile." 
+                title="This site is currently not supported for mobile." 
                 open={isModalOpen}
                 onCancel={closeModal}
                 footer={[
