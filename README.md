@@ -1,3 +1,4 @@
--Timeline
+-Home
+-Profile
 -Work
 -Contact

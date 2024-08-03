@@ -1,16 +1,19 @@
-import { React } from "react";
+import { React, useEffect } from "react";
 
-import { Card, Divider, Timeline } from "antd";
-import { UpOutlined } from "@ant-design/icons";
+import useScreenSize from "../../hooks/useScreenSize";
 
 import "antd/lib/card/style/css";
 import "antd/lib/divider/style/css";
 import "antd/lib/timeline/style/css";
 import "./styles.sass";
 
+
 const Profile = () => {
+
+    const screenSize = useScreenSize();
+
     return (
-        <div className="profile-section text" id="profile">
+        <div className={screenSize.width < 1367 ? "laptop-size profile-section text " : "profile-section text"} id="profile">
             <div className="grey-background right-elements-background">
                 <div className="header-container">
                     <h1>I Believe in</h1>
@@ -35,10 +38,11 @@ const Profile = () => {
                         Created a construction app that won the national finals
                         at the Climate Launchpad Competition
                     </div>
+                    {screenSize.width < 1367 ? <></> :
                     <div className="profile-info-scroll-item">
                         Lead several teams to create different web applications
                         in multiple industries
-                    </div>
+                    </div>}       
                     <div className="profile-info-scroll-item">
                         Created Chat & Survey Features for an Employee
                         Engagement Platform

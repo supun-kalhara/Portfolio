@@ -5,7 +5,7 @@ import { workInfo } from "./constants"
 import workRec from "../../images/assets/work_rec.jpg"
 import workRecOdd from "../../images/assets/work_rec_odd.jpg"
 import { HiArrowUpRight } from "react-icons/hi2";
-
+import useScreenSize from "../../hooks/useScreenSize";
 
 import "./styles.sass";
 import "antd/lib/carousel/style/css";
@@ -15,6 +15,9 @@ import "antd/lib/drawer/style/css";
 const Work = () => {
     const [open, setOpen] = useState(false);
     const [drawerNo, setDrawerNo] = useState(0);
+
+    const screenSize = useScreenSize();
+
     const showDrawer = (drawer) => {
         setDrawerNo(drawer);
         setOpen(true);
@@ -84,7 +87,7 @@ const Work = () => {
                 </Carousel>
                 {renderDescription()}
             </Drawer>
-            <div className="work-section" id="work">
+            <div className={screenSize.width < 1367 ? "work-section laptop-size" : "work-section"} id="work">
                 <div className="work-section-wrapper">
                     <div className="row">
                         {renderWorkItems()}

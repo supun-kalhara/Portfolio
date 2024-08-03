@@ -43,7 +43,7 @@ const Home = () => {
             >
                 <p>Please use a PC or Laptop</p>
             </Modal>
-            <div className="home-section-wrapper">
+            <div className={screenSize.width < 1367 ? "home-section-wrapper laptop-size": "home-section-wrapper"}>
                 <div className="overlay-element bottom-left"></div>
                 <div className="overlay-element top-right"></div>
                 <div className="right-elements-background turquoise-background">

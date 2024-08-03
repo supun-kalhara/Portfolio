@@ -5,14 +5,15 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineMedium } from "react-icons/ai";
 import { DiStackoverflow } from "react-icons/di";
+import useScreenSize from "../../hooks/useScreenSize";
 
 import "./styles.sass";
 
-
-
 const Contact = () => {
+    const screenSize = useScreenSize();
+
     return (
-        <div className="contact-section" id="contact">
+        <div className={screenSize.width < 1367 ? "contact-section laptop-size" : "contact-section"} id="contact">
             <div className="grey-background right-elements-background">
                 <div className="contact-name">
                     <span>Supun Kalhara</span>

@@ -10,7 +10,7 @@ body
     
 .grey-background
     background: #5A5A5A
-
+    
 .profile-section 
     width: 100%
     height: 100vh
@@ -46,6 +46,7 @@ body
             margin-right: 50px
             -ms-overflow-style: none
             scrollbar-width: none
+            justify-content: center
 
             .profile-info-scroll-item
                 font-weight:500
@@ -177,13 +178,6 @@ body
                     width: 100%
                     background-color: rgb(49, 48, 48)
 
-                // FIX THIS
-                // @media (min-width: 1366px) 
-                //     width: 80%
-                
-                // @media (min-width: 768px) 
-                //     width: 90%
-
                 .ant-card-body
                     width: 100%
                     height: calc(100% - 58px)
@@ -215,88 +209,26 @@ body
                         @media (max-width: 660px) 
                             margin-left: 50px
                             width: 90%
+.laptop-size
 
-                .profile-body-footer-wrapper
-                    // position: absolute
-                    bottom: 0
-                    height: 50%
+    .right-elements-background
 
-                    .profile-body-footer
-                        width: 100%
-                        height: 100%
-                        
-                        .tech-graph-wrapper
-                            width: 100%
-                            height: calc(100% - 44px)
-                            display: flex
-                            flex-direction: row
-                            flex-wrap: wrap
-                            justify-content: center
+        .header-container
 
-                            @media (max-width: 1375px) 
-                                height: auto
+            h1
+                font-size: 60px
 
-                            .tech-graph-sub-wrapper
-                                position: relative
-                                display: flex
-                                flex-direction: column
-                                justify-content: flex-end
+    .left-elements-background
 
-                                @media (max-width: 1375px) 
-                                    
+        .profile-info-scroll-section
 
-                                .graph-label
-                                    display: flex
-                                    align-items: center
-                                    position: absolute
-                                    color: grey
-                                    top: 100px
-                                    left: -30px
-                                    writing-mode: vertical-lr
-                                    font-weight: bold
-                                    
-                                    @media (max-width: 1375px) 
-                                        display: none
+            .profile-info-scroll-item
+                font-size: 14px
 
-                                    .graph-label-text
-                                        align: center
-                                        margin-top: 7px
-                                        margin-left: 3px
+            .first-element
+                font-size: 16px
 
-                                .graph-column
-                                    align-self: center
-                                    margin-left: 5px
-                                    margin-bottom: 10px
-                                    width: 80%
-                                    height: $graph-height
-
-                                    @media (max-width: 1375px) 
-                                        display: none
-
-                                .tech-stack-logo
-                                    width: 45px
-                                    height: 45px
-                                    margin-left: 5px
-                                    margin-bottom: 5px
-                                
-                                .tech-header
-                                    font-weight: bolder
-                                    
-                                .html-logo
-                                    margin-left: 0px
-
-                                .css-logo
-                                    margin-left: 0px   
-                        
-                        .tech-graph-sub-wrapper:nth-child(n + 0) .graph-column
-                            background-color: #C6FFDD
-
-                        .tech-graph-sub-wrapper:nth-child(2n + 0) .graph-column
-                                background-color: #FBD786
-                                
-                        .tech-graph-sub-wrapper:nth-child(3n + 0) .graph-column
-                                background-color: #f7797d
-
+        
                             
                         
 
